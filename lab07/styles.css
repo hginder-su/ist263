@@ -1,0 +1,11 @@
+h1 {color: #08605f;}
+body {color: #000000;
+background-color: #f8f2dc;}
+
+a:visited {color: #b4adea;}
+
+nav {background-color: #f6edff;
+    padding: 10px;
+    margin-bottom: 30px;}
+nav a {color: #08605f;}
+nav a:hover {background-color: #b4ccb9;}
