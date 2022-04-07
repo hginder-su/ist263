@@ -1,0 +1,16 @@
+h1 {color: #000000;}
+body {color: #000000;
+background-color: #e1c3ff;}
+
+a:visited {color: #3c3570;}
+
+nav {background-color: #f8f2dc;
+    padding: 10px;
+    margin-bottom: 30px;}
+nav a {color: #08605f;}
+nav a:hover {background-color: #b4ccb9;}
+span {float:right;}
+
+@media only screen and (max-width: 600px) {
+    nav a {max-width: 100%; display: block;}
+}
