@@ -9,8 +9,10 @@ nav {background-color: #f8f2dc;
     margin-bottom: 30px;}
 nav a {color: #08605f;}
 nav a:hover {background-color: #b4ccb9;}
-span {float:right;}
+a .foot {float:right;}
+.picture {max-width: 100%;}
 
 @media only screen and (max-width: 600px) {
-    nav a {max-width: 100%; display: block;}
+    nav a {max-width: 100%; display: block; padding:10px;}
+    span {display: none;}
 }
