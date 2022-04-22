@@ -10,3 +10,12 @@ hr {border: 2px solid #32a852;}
     nav a {max-width: 100%; display: block; padding:10px;}
     span {display: none;}
 }
+#skip {
+    position:absolute;
+    left: -999px; 
+    background-color: white;
+    padding:5px;
+}
+#skip:focus {
+    left: 10px; 
+}
