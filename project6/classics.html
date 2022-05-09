@@ -11,13 +11,27 @@
         .column2 {float: right; margin: 70px; border-width: 5px; border-style: solid; border-color:#32a852;}
         .row1, .row2, .row3 {display: flex;padding: 20px;}
     </style>
+    <script>
+        function TurnNavOnOff(){
+            if (document.getElementById("navlinks").style.getPropertyValue("display") == 'block') {
+                document.getElementById('navlinks').style.display = 'none';
+            }
+            else {
+                document.getElementById('navlinks').style.display = 'block';
+            }
+           
+        }
+    </script>
 </head>
 <body>
     <nav>
+        <img src="../projectimages/hamburger.png" alt="hamburger menu icon" id="hamicon" onclick="TurnNavOnOff();">
+        <div id="navlinks">
         <a href="#content" id="skip">Skip to Content</a>
         <a href="homepage.html">About Me</a>
         <a href="classics.html">The Classics</a>
         <a href="modernpicks.html">Modern Picks</a>
+    </div>
         </nav>
         <hr>
     <h1>The Classics</h1>
