@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="styles.css">
     <style>
         h1 {text-align: right; color: #32a852; font-size: 3em;}
-        .row1, .row2 {display: flex;padding: 20px;}
-        .column1 {float: left; margin: 70px; border-width: 5px; border-style: solid; border-color:#32a852;}
-        .column2 {float: right; margin: 70px; border-width: 5px; border-style: solid; border-color:#32a852;}
-        .column3 {float:right;}
+        .row1, .row2 {display:flex; padding:20px;}
+        .column1, .column3 {float: right; margin: 70px; border-width: 5px;border-style: solid;border-color:#32a852;}
+
+        
     </style>
     <script>
          function TurnNavOnOff(){
@@ -21,7 +21,6 @@
             else {
                 document.getElementById('navlinks').style.display = 'block';
             }
-           
         }
     </script>
 </head>
@@ -36,20 +35,20 @@
         </div>
         </nav>
  
-        <div id="row1">
-            <div id="column1">
+        <div class="row1">
+            <div class="column1">
             <img src="../projectimages/books.jpg" alt="homepage1">
             </div>
-        <div id="column2">
+        <div class="column2">
     <h1>Hayden's Bookshelf</h1>
     </div>
     </div> 
 
-    <div id="row2">
-    <div id="column1">
+    <div class="row2">
+    <div class="column1">
     <img src="../projectimages/hayden2.jpg" alt="homepage2">
     </div>
-    <div id="column3">
+    <div class="column3">
         <h2>About Me:</h2>
         <p>Hi there, welcome! My name is Hayden and I've loved reading for as long as I can remember. While I am by no means an expert on literature, I am very dedicated to my GoodReads account and care more about the contents of my bookshelf than anything else in the world. I think that the most important things that I've learned in life have come from books, specifically female characters who I can relate to and admire.<br><br>
             
