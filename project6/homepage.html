@@ -11,30 +11,9 @@
         .row1, .row2 {display:flex; padding:20px;}
         .column1, .column3 {float: right; margin: 70px; border-width: 5px;border-style: solid;border-color:#32a852;}
         .column2 {padding-left: 200px; justify-content: right; position: relative;}
-        .column2::before,
-        .column2::after {
-            position:absolute;
-            top: -25rem;
-            left: 50%;
-            transform: translateX(-50%) translateY(100%) scale(var(--scale));
-            transition: 50ms transform;
-        }
-        .column2::before
-        { content:attr(data-tooltip);
-            color: white;
-            padding: .5rem;
-            border-radius: .3rem;
-            text-align: center;
-            width: max-content;
-            max-width: 100px;
-            background: #333;
-        }
-
-        .column2:hover::before {
-            --scale: 1;
-        }
         h2 {text-align: center;}
         img {padding: 20px;}
+        .bookshelf:hover {width: 400px; height: 600px;}
         
     </style>
     <script>
@@ -62,9 +41,9 @@
         <section id="content">
         <div class="row1">
             <div class="column1">
-                <img src="../projectimages/bookshelf.jpg" alt="a bookshelf filled with books">
+                <img class="bookshelf" src="../projectimages/bookshelf.jpg" alt="a bookshelf filled with books">
                 </div>
-        <div class="column2" data-tooltip="Yay books!">
+        <div class="column2">
     <h1>Hayden's Bookshelf</h1>
     </div>
     </div> 
